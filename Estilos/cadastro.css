@@ -1,7 +1,7 @@
 *{
     text-align: center;
-    text-decoration:none;
-    font: normal 30px Arial;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 .borda{
     border: rgb(106, 230, 116) solid 1px;
@@ -14,7 +14,7 @@ label, input[type=radio], input[type=submit]{
 input[type=submit]{
     background: rgb(36, 224, 52);
     color: black;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border: 0;
     border: rgb(106, 230, 116) solid 1px;
 }
@@ -28,6 +28,10 @@ fieldset{
 .container {
     height: 40vw;
     display: flex;
-    justify-content: center; /*Alinha horizontalmente*/
-    align-items: center; /*Alinha verticalmente*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p, label{
+    padding: 10px 15px;
 }

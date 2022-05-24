@@ -1,7 +1,7 @@
 /*Estilizações gerais do site*/
 *{
     text-decoration: none;
-    color: black;
+    color: hsl(0, 0%, 0%);
 }
 /*Estilização do menu de navegação*/
 .topSite{
@@ -21,10 +21,9 @@
 }
 #icon{
     display: inline;
-    border: rgb(106, 230, 116) solid 1px;
+    border: rgb(16, 236, 9) solid 1px;
     font: normal 25px Arial;
     padding: 5px;
-    color: black;
 }
 #icon:hover{
     background-color: rgb(106, 230, 116);
@@ -54,25 +53,19 @@
     background-color: rgb(36, 224, 52);
     
 }
-.top{
-    width: 200px;
-    height: 200px;
-    border: white solid 20px;
-    border-width: 1px;
+section h2{
+    border: rgb(16, 236, 9) solid 1px;
     padding: 10px;
 }
-section{
-    width: 75%;
-}
-#barraLat{
-    float: right;
-    width: 25%;
-    padding-left: 20px;
-    box-sizing: border-box;
-}
+
 /*Estilização rodapé do site*/
 footer{
     margin: auto;
+    max-width: 960px;
+    padding: 10px;
     text-align: center;
-    background-color: rgb(16, 97, 22);
+    background-color: rgb(106, 230, 116);
+}
+footer a:hover{
+    text-decoration: underline;
 }
