@@ -1,71 +1,182 @@
 /*Estilizações gerais do site*/
-*{
+* {
     text-decoration: none;
     color: hsl(0, 0%, 0%);
+    margin: 0;
 }
+body{
+    background-color: green;
+}
+
 /*Estilização do menu de navegação*/
-.topSite{
-    border: solid 1px;
-    padding: 20px;
-    max-width: 939px;
+.topSite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
     margin: auto;
-    background-color: rgb(36, 224, 52)
+    gap: 32px;
+    background-color: rgb(36, 224, 52);
 }
-#barraPesq{
-    display: inline;
-    margin: auto 20px;
+
+.btn {
+    font: normal 20px Arial;
+    padding: 15px;
+    cursor: pointer;
 }
-#menu{
-    float: right;
-    font: normal 25px ;
-}
-#icon{
-    display: inline;
-    border: rgb(16, 236, 9) solid 1px;
-    font: normal 25px Arial;
-    padding: 5px;
-}
-#icon:hover{
-    background-color: rgb(106, 230, 116);
-    text-decoration: none;
-}
-#login{
-    border: rgb(106, 230, 116) solid 1px;
-    font: normal 25px Arial;
-    padding: 5px;
-}
-#login:hover{
+
+.btn:hover {
     background-color: rgb(106, 230, 116);
 }
-#registrar{
-    border: rgb(106, 230, 116) solid 1px;
-    font: normal 25px Arial;
-    padding: 5px;
+/* Barra de Pesquisa */
+.search-box{
+    background: green;
+    height: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#registrar:hover{
-    background-color: rgb(106, 230, 116);
+::-webkit-input-placeholder{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.5s;
+    width: 320px;
+}
+
+.search-btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 722px){
+    .topSite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 980px;
+        margin: auto;
+        background-color: rgb(36, 224, 52);
+    }
+    .btn {
+        font: normal 10px Arial;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .search-text{
+        background: none;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        font-size: 16px;
+        transition: 0.5s;
+        width: 0px;
+    }
+    .search-box:hover > .search-text{
+        width: 100px;
+        padding-left: 20px;
+    }
+    section h2 {
+        font: normal 10px Arial;
+    }
+}
+
+@media (min-width:723px) and (max-width: 947px) {
+    .topSite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 980px;
+        margin: auto;
+        background-color: rgb(36, 224, 52);
+    }
+    .btn {
+        font: normal 15px Arial;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .search-text{
+        background: none;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        font-size: 16px;
+        transition: 0.5s;
+        width: 0px;
+    }
+    .search-box:hover > .search-text{
+        width: 200px;
+        padding-left: 20px;
+    }
+    section h2 {
+        border: rgb(16, 236, 9) solid 1px;
+        font: normal 20px Arial;
+        padding: 10px;
+    }
+}
+
+
 /*Estilização do conteúdo*/
-.content{
+.content {
     max-width: 940px;
     margin: auto;
     padding: 20px;
     background-color: rgb(36, 224, 52);
-    
 }
-section h2{
+
+section h2 {
     border: rgb(16, 236, 9) solid 1px;
     padding: 10px;
 }
 
+.botão{
+    border: 0;
+    font-size: 15px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.titulo_top{
+    font-size: 20px;
+    color: green;
+}
+.espaço{
+    height: 10px;
+}
 /*Estilização rodapé do site*/
-footer{
+footer {
     margin: auto;
-    max-width: 960px;
-    padding: 10px;
+    max-width: 940px;
+    padding: 20px;
     text-align: center;
     background-color: rgb(106, 230, 116);
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }

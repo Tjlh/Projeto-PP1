@@ -13,22 +13,22 @@
 <body>
     <div>
         <header>
-            <div class="topSite">
-                <div id="icon">
-                    <a href="/index.html"><strong>Home</strong></a>
+            <nav class="topSite">
+                <a class="btn" href="/index.html"><strong>Home</strong></a>
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="Pesquisar...">
+                    <a class="search-btn" href="#">
+                        <img class="loupe" src="/Imagens/lupa.png" width="15" height="15">
+                    </a>
                 </div>
-                <form id="barraPesq" action="#" method="post">
-                    <input type="text" placeholder="Pesquisar..." size="60">
-                    <input type="submit" name="Pesquisar" value="Pesquisar">
-                </form>
-                <div id="menu">
-                    <a id="login" href="login.html"><strong>Login</strong></a>
-                    <a id="registrar" href="cadastro.html"><strong>Registrar-se</strong></a>
-                </div>
-            </div>
+                <a class="btn" href="criartopico.html"><strong>Criar tópico</strong></a>
+                <a class="btn" href="login.html"><strong>Login</strong></a>
+                <a class="btn" href="cadastro.html"><strong>Registrar-se</strong></a>              
+            </nav>
         </header>
         <div>
-            <main class="content">
+            <div class="content">
+                <h1>Titulo do tópico</h1>
                 <p>
                     Lorem ipsum dolor sit amet. Et quis laudantium sed eius deleniti et velit voluptas ad dolores
                     voluptatem ut odio placeat At vitae recusandae! Id ipsum quasi vel sint nemo et consequatur earum et
@@ -42,7 +42,17 @@
                     est dolore fugit? Rem sequi possimus qui eveniet minus ut sunt ipsum aut deserunt molestiae eos nisi
                     deleniti.
                 </p>
-            </main>
+                <div class="espaço"></div>
+                <div class="">
+                    <h2>Comentário</h2>
+                    <div class="espaço"></div>
+                    <form>
+                        <textarea name="" id="caixa" cols="88" rows="10"></textarea>
+                        <div class="espaço"></div>
+                        <p><input class="botão" type="submit" value="Publicar"></p>
+                    </form>
+                </div>
+            </div>
         </div>
         <footer>
             <a href="/sobre.html">Sobre</a>
